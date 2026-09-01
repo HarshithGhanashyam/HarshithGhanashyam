@@ -1,143 +1,99 @@
-<h1 align="center">Harshith Ghanashyam</h1>
+# Harshith Ghanashyam
 
-<p align="center">
-  <strong>Software Developer · AI/ML Engineering · Clean Architecture</strong>
-</p>
+**Software engineer building systems at the intersection of clean architecture and intelligent behavior — backend infrastructure, ML pipelines, agents, and computer vision.**
 
-<p align="center">
-  <a href="mailto:harshithghanashyam@gmail.com">
-    <img src="https://img.shields.io/badge/Email-harshithghanashyam@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/HarshithGhanashyam">
-    <img src="https://img.shields.io/badge/GitHub-HarshithGhanashyam-181717?style=flat&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-</p>
+[Email](mailto:harshithghanashyam@gmail.com) · [GitHub](https://github.com/HarshithGhanashyam)
 
 ---
 
-## About
+### 01 / FLAGSHIP
 
-I build software systems — from production APIs with clean architecture to ML pipelines, computer vision, and reinforcement learning agents.
+## MemOps
+**Operational memory infrastructure for AI and production systems.**
 
-My focus is on **engineering that works**: readable code, proper separation of concerns, testable components, and systems that degrade gracefully.
+**The problem** — Operational knowledge (incident resolutions, root causes, config decisions) scatters across disconnected tools, decays over time, contradicts itself, and can't be retrieved reliably when it's needed most.
 
----
+**The system** — A multi-tenant REST API + CLI for storing, versioning, retrieving, and diagnosing operational memories, with evidence and provenance attached to every entry.
 
-## What I Build
+**Engineering signals**
+- **Hybrid ranking pipeline** — 5 weighted signals: vector similarity, lexical match, confidence decay, environment fingerprint, lifecycle state
+- **Memory lifecycle** — PROPOSED → CONFIRMED → SUPERSEDED → CONTRADICTED → ARCHIVED, with contradiction detection between conflicting memories
+- **Deterministic diagnosis engine** — no LLM dependency, fully auditable reasoning
+- **Clean Architecture** — Domain → Application → Infrastructure → Interface → Agents
+- **Access control & reliability** — scoped API-key RBAC, sliding-window rate limiting, request telemetry via OpenTelemetry
+- **Verified with CI** — unit, integration, and e2e test suites
 
-| Area | What I've built |
-|------|----------------|
-| **Backend Systems** | Multi-tenant FastAPI services, clean architecture, event sourcing, RBAC |
-| **AI/ML Systems** | RAG pipelines, ReAct agents, Q-learning from scratch, GAN training |
-| **Computer Vision** | Real-time face/object detection, YOLO tracking, surveillance systems |
-| **Data / ML** | Churn prediction dashboards, CNN classifiers, hybrid retrieval pipelines |
+**Stack:** FastAPI · PostgreSQL · pgvector · SQLAlchemy · OpenTelemetry · Poetry · Docker
 
----
-
-## Technical Stack
-
-**Languages**: Python · TypeScript  
-**Frameworks**: FastAPI · Streamlit · Flask  
-**Databases**: PostgreSQL · SQLite · pgvector (vector search)  
-**ML/AI**: scikit-learn · PyTorch · OpenCV · FAISS · NumPy  
-**Infrastructure**: Docker · Docker Compose · Alembic · Poetry  
-**Practices**: Clean Architecture · Domain-Driven Design · TDD · Event Sourcing
+**[→ View Repository](https://github.com/HarshithGhanashyam/aioops)**
 
 ---
 
-## Flagship Project
+### 02 / FEATURED WORK
 
-### [MemOps — Operational Memory Management System](https://github.com/HarshithGhanashyam/aioops)
+**[Autonomous Research Agent](https://github.com/HarshithGhanashyam/05-agentic-research-agent)**
+A ReAct-style agent (Thought → Action → Observation) coordinating five tools — calculator, Wikipedia, web search, URL fetch, notepad. Core planning logic is deterministic and requires zero API keys, with a real LLM swappable in as a single function change.
+`FastAPI · Python · ReAct architecture`
 
-[![CI Status](https://github.com/HarshithGhanashyam/aioops/actions/workflows/ci.yml/badge.svg)](https://github.com/HarshithGhanashyam/aioops/actions)
+**[Q-Learning Agent from Scratch](https://github.com/HarshithGhanashyam/08-rl-learning-agent)**
+Tabular Q-learning implemented without an RL library — pure NumPy and dictionaries — trained on GridWorld and Tic-Tac-Toe with ε-greedy exploration. GridWorld episode reward improved from ≈−125 (untrained) to near-optimal.
+`Python · NumPy · Streamlit`
 
-> A production-grade Python service for structured **operational memory** storage, versioning, retrieval, and diagnosis — built for AI/LLM operational environments.
+**[Real-Time Visual Intelligence System](https://github.com/HarshithGhanashyam/surveillance-project)**
+A live-video pipeline combining face recognition, YOLO object detection, and person tracking, with a searchable incident log built on top.
+`Python · YOLO · InsightFace · OpenCV · FastAPI · SQLite`
 
-**Problem:** AI and production systems accumulate critical operational knowledge (incident resolutions, root causes, config decisions) across disconnected tools. This knowledge degrades, contradicts itself, and is impossible to retrieve reliably when needed.
+**[PDF Document Chatbot](https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot)**
+A fully local retrieval pipeline: PDF extraction → chunking → LSA embeddings → FAISS indexing → sentence re-ranking → extractive answers with page-level citations. No API keys required.
+`Python · FAISS · TF-IDF/SVD (LSA) · pypdf · Streamlit`
 
-**Solution:** A multi-tenant REST API + CLI that stores operational memories with full versioning, attaches evidence and provenance, runs hybrid semantic+lexical retrieval with confidence decay and environment drift detection, and detects contradictions between conflicting memories.
-
-**Built with:** FastAPI · PostgreSQL · pgvector · SQLAlchemy · OpenTelemetry · Poetry · Docker  
-**Architecture:** Clean Architecture (Domain → Application → Infrastructure → Interface → Agents)
-
-**Key technical highlights:**
-- 5-signal ranking pipeline: vector similarity (35%) + lexical (25%) + confidence decay (15%) + environment fingerprint (15%) + lifecycle state (10%)
-- Multi-stage memory lifecycle: PROPOSED → CONFIRMED → SUPERSEDED → CONTRADICTED → ARCHIVED
-- Deterministic diagnosis engine — no LLM dependency, fully auditable reasoning
-- Scoped API-key RBAC + sliding-window rate limiting + request telemetry
-- Comprehensive test suite: unit / integration / e2e
-
----
-
-## Featured Projects
-
-### [Autonomous Research Agent](https://github.com/HarshithGhanashyam/05-agentic-research-agent)
-[![CI Status](https://github.com/HarshithGhanashyam/05-agentic-research-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/HarshithGhanashyam/05-agentic-research-agent/actions)
-
-ReAct-style agent (Thought → Action → Observation) with 5 tools — calculator, Wikipedia, web search, URL fetch, notepad. Core planning is deterministic, requiring **zero API keys**. Designed so swapping in a real LLM is a one-function change.
-
-**Stack:** FastAPI · Python · ReAct architecture
+**[Customer Churn Dashboard](https://github.com/HarshithGhanashyam/01-churn-dashboard)**
+A synthetic telecom dataset generator paired with three classifiers (LR / RF / GBM, auto-selected by ROC-AUC) and a Streamlit dashboard for single predictions, batch CSV upload, and model comparison.
+`Python · scikit-learn · pandas · Streamlit`
 
 ---
 
-### [Q-Learning Agent from Scratch](https://github.com/HarshithGhanashyam/08-rl-learning-agent)
-[![CI Status](https://github.com/HarshithGhanashyam/08-rl-learning-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/HarshithGhanashyam/08-rl-learning-agent/actions)
+### 03 / AI ENGINEERING PROGRESSION
 
-Tabular Q-learning implemented from scratch (no RL library — pure NumPy/dicts) on GridWorld and Tic-Tac-Toe, with ε-greedy exploration and Streamlit UI. GridWorld: episode reward improved from ≈−125 (untrained) to near-optimal.
+A sequence of projects moving through the ML/AI stack, each one built to demonstrate a different layer of the field:
 
-**Stack:** Python · NumPy · Streamlit
+```
+01  Classical ML         → Churn Prediction Dashboard
+02  CNN                  → Image Classifier
+03  GAN                  → Digit Generator
+04  LLM Integration      → Summarizer & QA
+05  Agents               → Agentic Research Agent
+06  RAG                  → PDF Chatbot
+07  Computer Vision       → OpenCV Detection Suite
+08  Reinforcement Learning → Q-Learning Agent
+```
 
----
-
-### [Real-Time Visual Intelligence System](https://github.com/HarshithGhanashyam/surveillance-project)
-Real-time surveillance system: face recognition, YOLO object detection, person tracking, and trace logging over live video streams. Built with FastAPI backend and a searchable incident log.
-
-**Stack:** Python · YOLO · InsightFace · OpenCV · FastAPI · SQLite
-
----
-
-### [PDF Document Chatbot (RAG)](https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot)
-End-to-end RAG pipeline: PDF extraction → chunking → LSA embeddings → FAISS indexing → sentence re-ranking → extractive answer with page citations. Runs entirely locally — no API keys.
-
-**Stack:** Python · FAISS · TF-IDF/SVD (LSA) · pypdf · Streamlit
+[01](https://github.com/HarshithGhanashyam/01-churn-dashboard) · [02](https://github.com/HarshithGhanashyam/02-cnn-image-classifier) · [03](https://github.com/HarshithGhanashyam/03-gan-digit-generator) · [04](https://github.com/HarshithGhanashyam/04-llm-summarizer-qa) · [05](https://github.com/HarshithGhanashyam/05-agentic-research-agent) · [06](https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot) · [07](https://github.com/HarshithGhanashyam/07-opencv-detection-suite) · [08](https://github.com/HarshithGhanashyam/08-rl-learning-agent)
 
 ---
 
-### [Customer Churn Dashboard](https://github.com/HarshithGhanashyam/01-churn-dashboard)
-Synthetic telecom dataset generator + 3 trained classifiers (LR / RF / GBM, auto-selected by ROC-AUC) + Streamlit dashboard with single prediction, batch CSV upload, model comparison, and data exploration.
+### 04 / ENGINEERING PROOF
 
-**Stack:** Python · scikit-learn · pandas · Streamlit
+**System design** — Clean Architecture with strict domain separation, multi-tenancy, event sourcing (MemOps)
 
----
+**Intelligent systems** — Retrieval-augmented generation, agent orchestration with tool use, hybrid semantic+lexical retrieval, reinforcement learning from scratch
 
-## AI Engineering Series
-
-A progression through the ML/AI stack, building increasingly complex systems:
-
-| # | Project | Focus |
-|---|---------|-------|
-| [01](https://github.com/HarshithGhanashyam/01-churn-dashboard) | Churn Prediction Dashboard | Classical ML, model comparison, Streamlit |
-| [02](https://github.com/HarshithGhanashyam/02-cnn-image-classifier) | CNN Image Classifier | Deep learning, convolutional networks |
-| [03](https://github.com/HarshithGhanashyam/03-gan-digit-generator) | GAN Digit Generator | Generative models, adversarial training |
-| [04](https://github.com/HarshithGhanashyam/04-llm-summarizer-qa) | LLM Summarizer & QA | Language model integration |
-| [05](https://github.com/HarshithGhanashyam/05-agentic-research-agent) | Agentic Research Agent | ReAct agents, tool use, planning |
-| [06](https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot) | RAG PDF Chatbot | Retrieval-augmented generation, FAISS |
-| [07](https://github.com/HarshithGhanashyam/07-opencv-detection-suite) | OpenCV Detection Suite | Computer vision, real-time detection |
-| [08](https://github.com/HarshithGhanashyam/08-rl-learning-agent) | RL Learning Agent | Reinforcement learning from scratch |
+**Software engineering practice** — API design, RBAC and rate limiting, OpenTelemetry instrumentation, Docker-based deployment, CI pipelines with unit/integration/e2e coverage
 
 ---
 
-## GitHub Stats
+### 05 / STACK
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HarshithGhanashyam&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HarshithGhanashyam&layout=compact&theme=dark&hide_border=true" alt="Top Languages" height="165"/>
-</p>
+```
+Python · TypeScript
+FastAPI · Streamlit · Flask
+PostgreSQL · SQLite · pgvector
+PyTorch · scikit-learn · OpenCV · FAISS · NumPy
+Docker · Docker Compose · Alembic · Poetry
+```
 
 ---
 
-<p align="center">
-  <i>Always learning. Always building.</i>
-</p>
+### Contact
+
+**[harshithghanashyam@gmail.com](mailto:harshithghanashyam@gmail.com)** · **[github.com/HarshithGhanashyam](https://github.com/HarshithGhanashyam)**
