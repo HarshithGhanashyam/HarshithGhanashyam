@@ -1,48 +1,30 @@
 <div align="center">
 
-HARSHITH GHANASHYAM
+<img src="./banner.svg" width="100%" alt="Harshith Ghanashyam — software engineer"/>
 
-SOFTWARE ENGINEER · SYSTEMS · ARCHITECTURE · AI ENGINEERING
+<br/>
 
-Building reliable software where architecture meets intelligence.
+<a href="mailto:harshithghanashyam@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161b22" alt="Email"/></a>
+ 
+<a href="https://github.com/HarshithGhanashyam"><img src="https://img.shields.io/badge/GITHUB-0d1117?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=161b22" alt="GitHub"/></a>
 
-<br>
+<br/><br/>
 
-
-
-
-<br>
-
-┌─────────────────────────────────────────────────────────────────────┐
-│  harshith@engineering                                      ● ONLINE │
-│                                                                     │
-│  $ ./run --profile                                                   │
-│  > backend systems                                                   │
-│  > retrieval                                                         │
-│  > agents                                                            │
-│  > computer vision                                                   │
-│  > intelligent infrastructure                                       │
-│                                                                     │
-│  CURRENT SYSTEM  ────────────────────────────────────────  MEMOPS   │
-└─────────────────────────────────────────────────────────────────────┘
-
-SYSTEMS / BACKEND / AGENTS / RAG / COMPUTER VISION / INFRASTRUCTURE
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2600&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=Clean+Architecture+%C2%B7+Domain-Driven+Design+%C2%B7+Event+Sourcing;RAG+Pipelines+%C2%B7+ReAct+Agents+%C2%B7+Computer+Vision;Building+systems+that+remain+inspectable+after+the+demo" alt="Engineering focus"/>
 
 </div>
 
 <div align="center">
 
-01 / SYSTEM PROFILE    02 / MEMOPS    03 / SYSTEMS    04 / ARCHITECTURE    05 / STACK
+SYSTEMS　·　MEMOPS　·　PROJECTS　·　ARCHITECTURE　·　STACK　·　ACTIVITY
 
 </div>
 
 01 / SYSTEM PROFILE
 
-I build software systems with an emphasis on explicit architecture, deterministic behavior, retrieval, orchestration, and verification.
-
-<table>
+<table width="100%">
 <tr>
-<td width="25%" align="center">
+<td width="25%" align="center" valign="top">
 
 BACKEND
 
@@ -51,16 +33,25 @@ Services
 Data systems
 
 </td>
-<td width="25%" align="center">
+<td width="25%" align="center" valign="top">
+
+ARCHITECTURE
+
+Boundaries
+Dependencies
+Verification
+
+</td>
+<td width="25%" align="center" valign="top">
 
 INTELLIGENCE
 
-Agents
 RAG
-ML systems
+Agents
+RL
 
 </td>
-<td width="25%" align="center">
+<td width="25%" align="center" valign="top">
 
 VISION
 
@@ -69,21 +60,16 @@ Tracking
 Recognition
 
 </td>
-<td width="25%" align="center">
-
-ENGINEERING
-
-Architecture
-Testing
-Observability
-
-</td>
 </tr>
 </table>
 
-Engineering direction: moving from individual models and experiments toward complete, auditable systems.
+<div align="center">
 
-02 / CURRENT SYSTEM
+The direction is deliberate: move from isolated models toward complete, auditable systems.
+
+</div>
+
+02 / FLAGSHIP — MEMOPS
 
 <div align="center">
 
@@ -91,122 +77,124 @@ MEMOPS
 
 Operational memory infrastructure for AI and production systems.
 
+<a href="https://github.com/HarshithGhanashyam/aioops"><img src="https://img.shields.io/badge/%E2%86%92%20VIEW%20REPOSITORY-58A6FF?style=for-the-badge&labelColor=0d1117&color=58A6FF" alt="View MemOps repository"/></a>
+
 </div>
 
-Operational knowledge — incident resolutions, root causes, configuration decisions, and other operational context — tends to scatter across systems, become outdated, contradict itself, and become difficult to retrieve when it matters.
+<br/>
 
-MemOps treats that knowledge as versioned, retrievable, evidence-backed operational memory.
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
-System map
+THE PROBLEM
 
-flowchart TB
-    A["OPERATIONAL KNOWLEDGE<br/>Incidents · Root Causes · Decisions · Configuration"]
-    B["MEMOPS API"]
-    C["MEMORY ENGINE"]
-    D["RETRIEVAL"]
-    E["LIFECYCLE"]
-    F["DIAGNOSIS"]
-    G[("PostgreSQL<br/>+ pgvector")]
+Operational knowledge — incident resolutions, root causes, configuration decisions — scatters across tools, decays, contradicts itself, and becomes unreliable when it is needed.
 
-    A --> B --> C
-    C --> D
-    C --> E
-    C --> F
-    D --> G
-    E --> G
-    F --> G
+THE SYSTEM
 
-    classDef main fill:#161b22,stroke:#58a6ff,color:#ffffff,stroke-width:1px;
-    classDef data fill:#0d1117,stroke:#79c0ff,color:#ffffff,stroke-width:1px;
+A multi-tenant REST API + CLI for storing, versioning, retrieving, and diagnosing operational memories, with evidence and provenance attached to entries.
 
-    class A,B,C,D,E,F main;
-    class G data;
+</td>
+<td width="50%" valign="top">
 
-Retrieval engine
+SYSTEM PIPELINE
 
-MemOps combines multiple signals rather than relying on a single similarity score:
+┌───────────────────────────────┐
+│ INCIDENTS · FIXES · DECISIONS │
+└───────────────┬───────────────┘
+                ▼
+        ┌───────────────┐
+        │   MEMOPS API  │
+        └───────┬───────┘
+                ▼
+        ┌───────────────┐
+        │ MEMORY ENGINE │
+        └───────┬───────┘
+          ┌──────┼──────┐
+          ▼      ▼      ▼
+      RETRIEVE  STATE  DIAGNOSE
+          └──────┼──────┘
+                 ▼
+       PostgreSQL + pgvector
 
-flowchart LR
-    V["VECTOR<br/>SIMILARITY"]
-    L["LEXICAL<br/>MATCH"]
-    C["CONFIDENCE<br/>DECAY"]
-    E["ENVIRONMENT<br/>FINGERPRINT"]
-    S["LIFECYCLE<br/>STATE"]
+</td>
+</tr>
+</table>
 
-    V --> H["HYBRID<br/>RANKING"]
-    L --> H
-    C --> H
-    E --> H
-    S --> H
-
-    H --> R["RELEVANT<br/>MEMORY"]
-
-    classDef signal fill:#161b22,stroke:#30363d,color:#c9d1d9;
-    classDef core fill:#0d1117,stroke:#58a6ff,color:#ffffff,stroke-width:2px;
-    class V,L,C,E,S signal;
-    class H,R core;
-
-Memory lifecycle
-
-stateDiagram-v2
-    [*] --> PROPOSED
-    PROPOSED --> CONFIRMED
-    CONFIRMED --> SUPERSEDED
-    CONFIRMED --> CONTRADICTED
-    CONFIRMED --> ARCHIVED
-    SUPERSEDED --> [*]
-    CONTRADICTED --> [*]
-    ARCHIVED --> [*]
-
-Engineering signals
-
-SIGNAL
-
-IMPLEMENTATION
-
-Retrieval
-
-Vector similarity · lexical matching · confidence decay · environment context
-
-Lifecycle
-
-PROPOSED → CONFIRMED → SUPERSEDED / CONTRADICTED / ARCHIVED
-
-Diagnosis
-
-Deterministic diagnosis engine with no LLM dependency
-
-Access
-
-Scoped API-key RBAC
-
-Reliability
-
-Sliding-window rate limiting · unit / integration / e2e testing
-
-Observability
-
-OpenTelemetry
-
-Architecture
-
-Domain → Application → Infrastructure → Interface → Agents
+HYBRID RETRIEVAL
 
 <div align="center">
 
-FastAPI · PostgreSQL · pgvector · SQLAlchemy · OpenTelemetry · Poetry · Docker
+VECTOR
 
-<br>
+LEXICAL
 
-→ View MemOps Repository
+DECAY
+
+ENVIRONMENT
+
+LIFECYCLE
+
+similarity
+
+match
+
+confidence
+
+fingerprint
+
+state
+
+01
+
+02
+
+03
+
+04
+
+05
+
+5 signals → hybrid ranking → relevant operational memory
+
+</div>
+
+MEMORY LIFECYCLE
+
+<div align="center">
+
+PROPOSED
+   │
+   ▼
+CONFIRMED
+   │
+   ├──────────────► SUPERSEDED
+   │
+   ├──────────────► CONTRADICTED
+   │
+   └──────────────► ARCHIVED
+
+</div>
+
+<table width="100%">
+<tr>
+<td width="25%" valign="top"><b>DIAGNOSIS</b><br/>Deterministic<br/>Zero LLM dependency<br/>Fully auditable</td>
+<td width="25%" valign="top"><b>ACCESS</b><br/>Scoped API keys<br/>RBAC<br/>Rate limiting</td>
+<td width="25%" valign="top"><b>VERIFICATION</b><br/>Unit tests<br/>Integration tests<br/>E2E tests · CI-gated</td>
+<td width="25%" valign="top"><b>OBSERVABILITY</b><br/>OpenTelemetry<br/>Evidence<br/>Provenance</td>
+</tr>
+</table>
+
+<div align="center">
+
+FastAPI PostgreSQL pgvector SQLAlchemy OpenTelemetry Poetry Docker
 
 </div>
 
 03 / SELECTED SYSTEMS
 
-Four projects that show the progression from algorithms and models to complete intelligent systems.
-
-<table>
+<table width="100%">
 <tr>
 <td width="50%" valign="top">
 
@@ -214,99 +202,90 @@ Four projects that show the progression from algorithms and models to complete i
 
 ReAct-style research agent coordinating five tools.
 
-flowchart LR
-    I["INPUT"] --> P["REASON"]
-    P --> T["TOOL"]
-    T --> O["OBSERVATION"]
-    O --> P
-    P --> A["ANSWER"]
+INPUT
+  ↓
+REASON ←──────────────┐
+  ↓                   │
+TOOL → OBSERVATION ───┘
+  ↓
+ANSWER
 
-Python FastAPI ReAct
+Deterministic core planning. Zero API keys. LLM swap-in is isolated to one function.
 
-Engineering signal: deterministic core planning with LLM integration kept replaceable.
+FastAPI Python ReAct
 
-→ Repository
+<a href="https://github.com/HarshithGhanashyam/05-agentic-research-agent">→ repository</a>
 
 </td>
-
 <td width="50%" valign="top">
 
 02 / VISUAL INTELLIGENCE
 
-Live-video pipeline for detection, recognition, tracking, and incident logging.
+Real-time video pipeline.
 
-flowchart LR
-    C["CAMERA"] --> D["YOLO<br/>DETECTION"]
-    D --> T["TRACKING"]
-    T --> R["RECOGNITION"]
-    R --> L["INCIDENT<br/>LOG"]
+CAMERA
+  ↓
+YOLO DETECTION
+  ↓
+PERSON TRACKING
+  ↓
+FACE RECOGNITION
+  ↓
+INCIDENT LOG
+
+Turns live video into searchable incidents.
 
 YOLO InsightFace OpenCV FastAPI
 
-Engineering signal: real-time vision pipeline with searchable incident output.
-
-→ Repository
+<a href="https://github.com/HarshithGhanashyam/surveillance-project">→ repository</a>
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
 03 / PDF RAG
 
-Local retrieval pipeline producing cited extractive answers.
+Local retrieval pipeline with cited answers.
 
-flowchart LR
-    P["PDF"] --> C["CHUNK"]
-    C --> E["LSA"]
-    E --> F["FAISS"]
-    F --> R["RERANK"]
-    R --> A["CITED<br/>ANSWER"]
+PDF → CHUNK → LSA → FAISS → RERANK → CITED ANSWER
+
+No hosted vector database required.
 
 FAISS LSA pypdf Streamlit
 
-Engineering signal: retrieval pipeline without requiring a hosted vector service.
-
-→ Repository
+<a href="https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot">→ repository</a>
 
 </td>
-
 <td width="50%" valign="top">
 
-04 / Q-LEARNING AGENT
+04 / Q-LEARNING
 
-Tabular Q-learning implemented from scratch using NumPy.
+Tabular Q-learning from scratch.
 
-flowchart LR
-    S["STATE"] --> A["ACTION"]
-    A --> R["REWARD"]
-    R --> Q["Q UPDATE"]
-    Q --> P["POLICY"]
-    P --> S
+STATE → ACTION → REWARD → Q UPDATE → POLICY
+  ↑                                      │
+  └──────────────────────────────────────┘
+
+Implemented without an RL library using NumPy.
 
 Python NumPy Streamlit
 
-Engineering signal: RL fundamentals implemented without an RL library.
-
-→ Repository
+<a href="https://github.com/HarshithGhanashyam/08-rl-learning-agent">→ repository</a>
 
 </td>
 </tr>
 </table>
 
-<details>
-<summary><b>PROJECT ARCHIVE</b></summary>
-
-<br>
+PROJECT ARCHIVE
 
 #
 
-System
+SYSTEM
 
-Focus
+FOCUS
 
-Stack
+REPOSITORY
 
 01
 
@@ -314,7 +293,7 @@ Customer Churn Dashboard
 
 Classification + analytics
 
-scikit-learn pandas Streamlit
+→ repo
 
 02
 
@@ -322,7 +301,7 @@ CNN Image Classifier
 
 Deep learning
 
-Python
+→ repo
 
 03
 
@@ -330,7 +309,7 @@ GAN Digit Generator
 
 Generative models
 
-Python
+→ repo
 
 04
 
@@ -338,131 +317,127 @@ LLM Summarizer / QA
 
 LLM integration
 
-Python
+→ repo
 
-05
+07
 
 OpenCV Detection Suite
 
 Computer vision
 
-OpenCV
-
-</details>
+→ repo
 
 04 / ENGINEERING MODEL
 
-From models to systems.
-
-flowchart LR
-    M["MODELS"] --> C["AI<br/>COMPONENTS"]
-    C --> A["INTELLIGENT<br/>APPLICATIONS"]
-    A --> G["AGENTS +<br/>RETRIEVAL"]
-    G --> S["SYSTEMS"]
-    S --> I["AI<br/>INFRASTRUCTURE"]
-
-    X["MEMOPS"] -.-> I
-
-    classDef normal fill:#161b22,stroke:#30363d,color:#c9d1d9;
-    classDef focus fill:#0d1117,stroke:#58a6ff,color:#ffffff,stroke-width:2px;
-
-    class M,C,A,G,S normal;
-    class I,X focus;
-
-The project sequence reflects a deliberate shift:
-
-learning algorithms → integrating models → orchestrating tools → building retrieval systems → designing infrastructure.
-
-Architecture principles
-
-flowchart TB
-    D["DOMAIN"]
-    A["APPLICATION"]
-    I["INFRASTRUCTURE"]
-    F["INTERFACE"]
-    G["AGENTS"]
-
-    D --> A --> I --> F --> G
-
-    classDef layer fill:#161b22,stroke:#30363d,color:#c9d1d9;
-    classDef domain fill:#0d1117,stroke:#58a6ff,color:#ffffff,stroke-width:2px;
-
-    class D domain;
-    class A,I,F,G layer;
-
-The goal is straightforward:
-
-Core behavior should not become a hostage to frameworks, databases, models, or external services.
-
-That means keeping domain behavior explicit, infrastructure replaceable, and interfaces thin.
-
-05 / STACK
-
 <div align="center">
 
-LANGUAGES
+FROM MODELS → TO SYSTEMS → TO INFRASTRUCTURE
 
-Python TypeScript JavaScript C Java
-
-BACKEND
-
-FastAPI Flask REST
-
-DATA
-
-PostgreSQL pgvector SQLite MySQL
-
-AI / ML
-
-PyTorch scikit-learn NumPy
-
-INTELLIGENT SYSTEMS
-
-RAG Agents LLM Integration Reinforcement Learning
-
-COMPUTER VISION
-
-OpenCV YOLO InsightFace
-
-INFRASTRUCTURE
-
-Docker OpenTelemetry Poetry Git GitHub
+┌────────────┐
+│   MODELS   │
+└─────┬──────┘
+      ↓
+┌────────────┐
+│ AI         │
+│ COMPONENTS │
+└─────┬──────┘
+      ↓
+┌────────────┐
+│INTELLIGENT │
+│APPLICATIONS│
+└─────┬──────┘
+      ↓
+┌────────────┐
+│ AGENTS +   │
+│ RETRIEVAL  │
+└─────┬──────┘
+      ↓
+┌────────────┐
+│  SYSTEMS   │
+└─────┬──────┘
+      ↓
+┌────────────────┐
+│ AI INFRASTRUCTURE │
+└───────┬────────┘
+        ↓
+      MEMOPS
 
 </div>
 
-06 / GITHUB ACTIVITY
+ARCHITECTURE PRINCIPLE
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=HarshithGhanashyam&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF" height="165">
+DOMAIN → APPLICATION → INFRASTRUCTURE → INTERFACE → AGENTS
+  │
+  └─────────────── dependencies stay controlled ────────────────┘
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HarshithGhanashyam&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF" height="165">
+</div>
 
-<br><br>
+Core behavior should not become a hostage to frameworks, databases, models, or external APIs.
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=HarshithGhanashyam&theme=github-compact&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF" width="95%">
+05 / TECHNOLOGY
+
+<div align="center">
+
+<table width="90%">
+<tr><td><b>LANGUAGES</b></td><td>Python · TypeScript · JavaScript · C · Java</td></tr>
+<tr><td><b>BACKEND</b></td><td>FastAPI · Flask · REST</td></tr>
+<tr><td><b>DATA</b></td><td>PostgreSQL · pgvector · SQLite · MySQL</td></tr>
+<tr><td><b>AI / ML</b></td><td>PyTorch · scikit-learn · NumPy</td></tr>
+<tr><td><b>INTELLIGENT SYSTEMS</b></td><td>RAG · Agents · LLM Integration · Reinforcement Learning</td></tr>
+<tr><td><b>VISION</b></td><td>OpenCV · YOLO · InsightFace</td></tr>
+<tr><td><b>INFRASTRUCTURE</b></td><td>Docker · OpenTelemetry · Poetry · Git · GitHub</td></tr>
+</table>
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=py,ts,fastapi,flask,postgres,sqlite,docker,pytorch,sklearn,opencv,git,github&theme=dark&perline=6" alt="Technology stack"/>
+
+</div>
+
+06 / ACTIVITY
+
+<div align="center">
+
+<!-- Generated by metrics.yml -->
+
+<img src="./metrics.svg" width="100%" alt="GitHub metrics dashboard"/>
+
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=HarshithGhanashyam&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=a371f7&text_color=c9d1d9" height="165" alt="GitHub statistics"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HarshithGhanashyam&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" height="165" alt="Top languages"/>
+
+<br/><br/>
+
+<!-- Generated by snake.yml -->
+
+<img src="https://raw.githubusercontent.com/HarshithGhanashyam/HarshithGhanashyam/output/snake-dark.svg" width="100%" alt="GitHub contribution snake"/>
 
 </div>
 
 <div align="center">
 
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│  SYSTEM STATUS                                               │
-│  ● BUILDING                                                  │
-│                                                              │
-│  CURRENT FOCUS                                               │
-│  MEMOPS                                                       │
-│                                                              │
-│  CONTACT                                                      │
-│  harshithghanashyam@gmail.com                                │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:161b22,100:0d1117&height=100&section=footer" width="100%" alt=""/>
 
-HARSHITH GHANASHYAM
+SYSTEM STATUS
+
+● BUILDING
+
+CURRENT FOCUS — MEMOPS
+
+Operational memory infrastructure for AI systems.
+
+<br/>
+
+<a href="mailto:harshithghanashyam@gmail.com">harshithghanashyam@gmail.com</a>
+  ·  
+<a href="https://github.com/HarshithGhanashyam">github.com/HarshithGhanashyam</a>
+
+<br/><br/>
 
 SYSTEMS · ARCHITECTURE · AI ENGINEERING
-
-GitHub · Email
 
 </div>
