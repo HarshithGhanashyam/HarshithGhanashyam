@@ -50,6 +50,8 @@ My focus is on **engineering that works**: readable code, proper separation of c
 
 ### [MemOps — Operational Memory Management System](https://github.com/HarshithGhanashyam/aioops)
 
+[![CI Status](https://github.com/HarshithGhanashyam/aioops/actions/workflows/ci.yml/badge.svg)](https://github.com/HarshithGhanashyam/aioops/actions)
+
 > A production-grade Python service for structured **operational memory** storage, versioning, retrieval, and diagnosis — built for AI/LLM operational environments.
 
 **Problem:** AI and production systems accumulate critical operational knowledge (incident resolutions, root causes, config decisions) across disconnected tools. This knowledge degrades, contradicts itself, and is impossible to retrieve reliably when needed.
@@ -71,6 +73,8 @@ My focus is on **engineering that works**: readable code, proper separation of c
 ## Featured Projects
 
 ### [Autonomous Research Agent](https://github.com/HarshithGhanashyam/05-agentic-research-agent)
+[![CI Status](https://github.com/HarshithGhanashyam/05-agentic-research-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/HarshithGhanashyam/05-agentic-research-agent/actions)
+
 ReAct-style agent (Thought → Action → Observation) with 5 tools — calculator, Wikipedia, web search, URL fetch, notepad. Core planning is deterministic, requiring **zero API keys**. Designed so swapping in a real LLM is a one-function change.
 
 **Stack:** FastAPI · Python · ReAct architecture
@@ -78,6 +82,8 @@ ReAct-style agent (Thought → Action → Observation) with 5 tools — calculat
 ---
 
 ### [Q-Learning Agent from Scratch](https://github.com/HarshithGhanashyam/08-rl-learning-agent)
+[![CI Status](https://github.com/HarshithGhanashyam/08-rl-learning-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/HarshithGhanashyam/08-rl-learning-agent/actions)
+
 Tabular Q-learning implemented from scratch (no RL library — pure NumPy/dicts) on GridWorld and Tic-Tac-Toe, with ε-greedy exploration and Streamlit UI. GridWorld: episode reward improved from ≈−125 (untrained) to near-optimal.
 
 **Stack:** Python · NumPy · Streamlit
