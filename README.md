@@ -1,67 +1,74 @@
 <div align="center">
 
-<img src="./banner.svg" width="100%" alt="Harshith Ghanashyam — software engineer"/>
+<img src="./banner.svg" width="100%" alt="Harshith Ghanashyam — Vision × Intelligence × Systems"/>
 
 <br/>
 
 <a href="mailto:harshithghanashyam@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161b22" alt="Email"/></a>
 &nbsp;
 <a href="https://github.com/HarshithGhanashyam"><img src="https://img.shields.io/badge/GITHUB-0d1117?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=161b22" alt="GitHub"/></a>
+&nbsp;
+<a href="https://www.linkedin.com/in/harshith-ghanashyam-222599349/"><img src="https://img.shields.io/badge/LINKEDIN-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=161b22" alt="LinkedIn"/></a>
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2600&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=Clean+Architecture+%C2%B7+Domain-Driven+Design+%C2%B7+Event+Sourcing;RAG+Pipelines+%C2%B7+ReAct+Agents+%C2%B7+Computer+Vision;Building+systems+that+remain+inspectable+after+the+demo" alt="Engineering focus"/>
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=300&size=16&duration=3000&pause=1200&color=8B949E&center=true&vCenter=true&width=700&lines=Perception+%E2%86%92+Understanding+%E2%86%92+Reasoning+%E2%86%92+Action;Computer+Vision+%C2%B7+AI+Agents+%C2%B7+Intelligent+Systems;Building+systems+that+remain+inspectable+after+the+demo" alt="Engineering tagline"/>
 
 </div>
 
----
+<img src="./assets/separator.svg" width="100%"/>
+
+<br/>
 
 <div align="center">
 
-`SYSTEMS`　·　`MEMOPS`　·　`PROJECTS`　·　`ARCHITECTURE`　·　`STACK`　·　`ACTIVITY`
+### I build intelligent systems at the intersection of perception, AI, and software engineering.
+
+From real-time computer vision pipelines to autonomous reasoning agents to operational memory infrastructure — I design systems where raw perception becomes structured intelligence, and intelligence becomes reliable, deployable software.
 
 </div>
 
----
+<br/>
 
-# `01` / SYSTEM PROFILE
+<img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+## `CORE IDENTITY`
 
 <table width="100%">
 <tr>
-<td width="25%" align="center" valign="top">
+<td width="33%" align="center" valign="top">
 
-### BACKEND
+<img src="./assets/vision-icon.svg" width="64" height="64" alt="Vision"/>
 
-**APIs**  
-**Services**  
-**Data systems**
+### 👁️ VISION
 
-</td>
-<td width="25%" align="center" valign="top">
+**Perception · Detection · Recognition**
 
-### ARCHITECTURE
-
-**Boundaries**  
-**Dependencies**  
-**Verification**
+Real-time video processing, object detection with YOLOv8, face recognition via InsightFace, multi-object tracking, and visual analytics pipelines that turn raw camera feeds into structured, searchable intelligence.
 
 </td>
-<td width="25%" align="center" valign="top">
+<td width="33%" align="center" valign="top">
 
-### INTELLIGENCE
+<img src="./assets/intelligence-icon.svg" width="64" height="64" alt="Intelligence"/>
 
-**RAG**  
-**Agents**  
-**RL**
+### 🧠 INTELLIGENCE
+
+**Reasoning · Retrieval · Generation**
+
+RAG pipelines with hybrid retrieval, autonomous ReAct-style agents with tool orchestration, reinforcement learning systems, and LLM-powered applications — all designed for auditability and zero-dependency operation.
 
 </td>
-<td width="25%" align="center" valign="top">
+<td width="33%" align="center" valign="top">
 
-### VISION
+<img src="./assets/systems-icon.svg" width="64" height="64" alt="Systems"/>
 
-**Detection**  
-**Tracking**  
-**Recognition**
+### ⚙️ SYSTEMS
+
+**Architecture · APIs · Infrastructure**
+
+FastAPI backends, PostgreSQL with pgvector, multi-tenant REST APIs, Docker deployments, and full-stack applications with Next.js — built with clean boundaries, proper testing, and production-grade observability.
 
 </td>
 </tr>
@@ -73,17 +80,17 @@
 
 </div>
 
----
+<br/>
 
-# `02` / FLAGSHIP — MEMOPS
+<img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+## `HOW I THINK`
 
 <div align="center">
 
-## MEMOPS
-
-### Operational memory infrastructure for AI and production systems.
-
-<a href="https://github.com/HarshithGhanashyam/aioops"><img src="https://img.shields.io/badge/%E2%86%92%20VIEW%20REPOSITORY-58A6FF?style=for-the-badge&labelColor=0d1117&color=58A6FF" alt="View MemOps repository"/></a>
+<img src="./assets/philosophy-flow.svg" width="100%" alt="OBSERVE → UNDERSTAND → REASON → BUILD → VERIFY → ITERATE"/>
 
 </div>
 
@@ -91,178 +98,177 @@
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### THE PROBLEM
-
-Operational knowledge — incident resolutions, root causes, configuration decisions — scatters across tools, decays, contradicts itself, and becomes unreliable when it is needed.
-
-### THE SYSTEM
-
-A **multi-tenant REST API + CLI** for storing, versioning, retrieving, and diagnosing operational memories, with evidence and provenance attached to entries.
+**OBSERVE** — Study the problem space. Understand the domain, the data, the constraints, and the failure modes before writing any code.
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### SYSTEM PIPELINE
+**REASON** — Design the architecture. Define boundaries, data flows, and contracts. Choose the simplest approach that handles the real complexity.
 
-```text
-┌───────────────────────────────┐
-│ INCIDENTS · FIXES · DECISIONS │
-└───────────────┬───────────────┘
-                ▼
-        ┌───────────────┐
-        │   MEMOPS API  │
-        └───────┬───────┘
-                ▼
-        ┌───────────────┐
-        │ MEMORY ENGINE │
-        └───────┬───────┘
-          ┌──────┼──────┐
-          ▼      ▼      ▼
-      RETRIEVE  STATE  DIAGNOSE
-          └──────┼──────┘
-                 ▼
-       PostgreSQL + pgvector
-```
+</td>
+<td width="33%" valign="top">
+
+**BUILD & VERIFY** — Implement incrementally. Test at every layer. Ship something inspectable, not just something that demos well.
 
 </td>
 </tr>
 </table>
 
-### `HYBRID RETRIEVAL`
+<br/>
 
-<div align="center">
+<img src="./assets/separator.svg" width="100%"/>
 
-| VECTOR | LEXICAL | DECAY | ENVIRONMENT | LIFECYCLE |
-|:---:|:---:|:---:|:---:|:---:|
-| similarity | match | confidence | fingerprint | state |
-| `01` | `02` | `03` | `04` | `05` |
+<br/>
 
-**5 signals → hybrid ranking → relevant operational memory**
+## `FEATURED SYSTEMS`
 
-</div>
+<br/>
 
-### `MEMORY LIFECYCLE`
-
-<div align="center">
-
-```text
-PROPOSED
-   │
-   ▼
-CONFIRMED
-   │
-   ├──────────────► SUPERSEDED
-   │
-   ├──────────────► CONTRADICTED
-   │
-   └──────────────► ARCHIVED
-```
-
-</div>
+### `01` / REAL-TIME VISUAL INTELLIGENCE
 
 <table width="100%">
 <tr>
-<td width="25%" valign="top"><b>DIAGNOSIS</b><br/>Deterministic<br/>Zero LLM dependency<br/>Fully auditable</td>
-<td width="25%" valign="top"><b>ACCESS</b><br/>Scoped API keys<br/>RBAC<br/>Rate limiting</td>
-<td width="25%" valign="top"><b>VERIFICATION</b><br/>Unit tests<br/>Integration tests<br/>E2E tests · CI-gated</td>
-<td width="25%" valign="top"><b>OBSERVABILITY</b><br/>OpenTelemetry<br/>Evidence<br/>Provenance</td>
+<td width="55%" valign="top">
+
+**A real-time computer vision pipeline that transforms live video into searchable, identity-aware incidents.**
+
+The system integrates YOLOv8 for configurable object detection, InsightFace for identity-aware face recognition, and a custom multi-object tracking pipeline — processing webcam and IP-camera feeds simultaneously with CUDA GPU acceleration.
+
+**The challenge:** Combining detection, tracking, and recognition into a single real-time pipeline without frame drops, while maintaining searchable trace logs for every detected entity.
+
+**Key decisions:**
+- InsightFace over dlib for face recognition accuracy
+- OpenCV pipeline with CUDA acceleration for real-time performance
+- CSV-based data logging for searchable incident history
+- Configurable detection thresholds per deployment context
+
+<br/>
+
+`YOLOv8` `InsightFace` `OpenCV` `CUDA` `Python` `FastAPI`
+
+<a href="https://github.com/HarshithGhanashyam/surveillance-project">→ view repository</a>
+
+</td>
+<td width="45%" valign="top">
+
+<img src="./assets/surveillance-pipeline.svg" width="100%" alt="Visual Intelligence Pipeline"/>
+
+</td>
 </tr>
 </table>
 
-<div align="center">
-
-`FastAPI` `PostgreSQL` `pgvector` `SQLAlchemy` `OpenTelemetry` `Poetry` `Docker`
-
-</div>
+<br/>
 
 ---
 
-# `03` / SELECTED SYSTEMS
+<br/>
+
+### `02` / MEMOPS — OPERATIONAL MEMORY INFRASTRUCTURE
+
+<table width="100%">
+<tr>
+<td width="45%" valign="top">
+
+<img src="./assets/memops-pipeline.svg" width="100%" alt="MemOps Pipeline"/>
+
+</td>
+<td width="55%" valign="top">
+
+**Operational knowledge — incident resolutions, root causes, configuration decisions — scatters across tools, decays, contradicts itself, and becomes unreliable when it is needed.**
+
+MemOps is a **multi-tenant REST API + CLI** for storing, versioning, retrieving, and diagnosing operational memories, with evidence and provenance attached to every entry.
+
+**Hybrid retrieval with 5 signals:**
+
+| Vector | Lexical | Decay | Environment | Lifecycle |
+|:---:|:---:|:---:|:---:|:---:|
+| similarity | match | confidence | fingerprint | state |
+
+**Memory lifecycle:** `PROPOSED → CONFIRMED → SUPERSEDED / CONTRADICTED / ARCHIVED`
+
+**Key decisions:**
+- Deterministic diagnosis engine — zero LLM dependency
+- pgvector for semantic similarity alongside lexical search
+- Scoped API keys with RBAC for multi-tenant access
+- OpenTelemetry for full observability
+
+<br/>
+
+`FastAPI` `PostgreSQL` `pgvector` `SQLAlchemy` `Docker` `Poetry`
+
+<a href="https://github.com/HarshithGhanashyam/aioops">→ view repository</a>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<br/>
+
+### `03` / AUTONOMOUS RESEARCH AGENT
+
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
+
+**A ReAct-style autonomous research agent that coordinates five tools through a Thought → Action → Observation loop.**
+
+The agent decomposes complex questions into sub-tasks, selects appropriate tools, executes them, observes results, and reasons about next steps — all without external API keys.
+
+**Key decisions:**
+- Deterministic core planning — LLM integration is isolated to a single swappable function
+- Zero API key requirement — works fully offline
+- FastAPI backend for programmatic access
+- Tool interface designed for extensibility
+
+<br/>
+
+`Python` `FastAPI` `ReAct Pattern`
+
+<a href="https://github.com/HarshithGhanashyam/05-agentic-research-agent">→ view repository</a>
+
+</td>
+<td width="45%" valign="top">
+
+<img src="./assets/agent-pipeline.svg" width="100%" alt="ReAct Agent Loop"/>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+## `SELECTED PROJECTS`
 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
 
-### `01` / AUTONOMOUS RESEARCH AGENT
+### RAG PDF CHATBOT
+**Offline RAG pipeline for PDF Q&A**
 
-**ReAct-style research agent coordinating five tools.**
+TF-IDF/SVD embeddings → FAISS vector indexing → sentence-level re-ranking → page-level citations. No API keys. Runs entirely local.
 
-```text
-INPUT
-  ↓
-REASON ←──────────────┐
-  ↓                   │
-TOOL → OBSERVATION ───┘
-  ↓
-ANSWER
-```
-
-Deterministic core planning. Zero API keys. LLM swap-in is isolated to one function.
-
-`FastAPI` `Python` `ReAct`
-
-<a href="https://github.com/HarshithGhanashyam/05-agentic-research-agent">→ repository</a>
-
-</td>
-<td width="50%" valign="top">
-
-### `02` / VISUAL INTELLIGENCE
-
-**Real-time video pipeline.**
-
-```text
-CAMERA
-  ↓
-YOLO DETECTION
-  ↓
-PERSON TRACKING
-  ↓
-FACE RECOGNITION
-  ↓
-INCIDENT LOG
-```
-
-Turns live video into searchable incidents.
-
-`YOLO` `InsightFace` `OpenCV` `FastAPI`
-
-<a href="https://github.com/HarshithGhanashyam/surveillance-project">→ repository</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### `03` / PDF RAG
-
-**Local retrieval pipeline with cited answers.**
-
-```text
-PDF → CHUNK → LSA → FAISS → RERANK → CITED ANSWER
-```
-
-No hosted vector database required.
-
-`FAISS` `LSA` `pypdf` `Streamlit`
+`Python` `FAISS` `Streamlit` `TF-IDF`
 
 <a href="https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot">→ repository</a>
 
 </td>
 <td width="50%" valign="top">
 
-### `04` / Q-LEARNING
+### RL LEARNING AGENT
+**Tabular Q-learning from scratch**
 
-**Tabular Q-learning from scratch.**
-
-```text
-STATE → ACTION → REWARD → Q UPDATE → POLICY
-  ↑                                      │
-  └──────────────────────────────────────┘
-```
-
-Implemented without an RL library using NumPy.
+GridWorld + Tic-Tac-Toe environments. Epsilon-greedy exploration, sparse Q-tables, convergence tracking. No RL library dependency.
 
 `Python` `NumPy` `Streamlit`
 
@@ -270,139 +276,190 @@ Implemented without an RL library using NumPy.
 
 </td>
 </tr>
-</table>
+<tr>
+<td width="50%" valign="top">
 
-### PROJECT ARCHIVE
+### OPENCV DETECTION SUITE
+**Real-time detection with Haar cascades**
 
-| # | SYSTEM | FOCUS | REPOSITORY |
-|---:|---|---|---|
-| `01` | **Customer Churn Dashboard** | Classification + analytics | [→ repo](https://github.com/HarshithGhanashyam/01-churn-dashboard) |
-| `02` | **CNN Image Classifier** | Deep learning | [→ repo](https://github.com/HarshithGhanashyam/02-cnn-image-classifier) |
-| `03` | **GAN Digit Generator** | Generative models | [→ repo](https://github.com/HarshithGhanashyam/03-gan-digit-generator) |
-| `04` | **LLM Summarizer / QA** | LLM integration | [→ repo](https://github.com/HarshithGhanashyam/04-llm-summarizer-qa) |
-| `07` | **OpenCV Detection Suite** | Computer vision | [→ repo](https://github.com/HarshithGhanashyam/07-opencv-detection-suite) |
+Face, eye, and smile detection + Canny edge detection + HSV color tracking. Supports image, video, and webcam inputs with Streamlit UI.
 
----
+`Python` `OpenCV` `Streamlit`
 
-# `04` / ENGINEERING MODEL
+<a href="https://github.com/HarshithGhanashyam/07-opencv-detection-suite">→ repository</a>
 
-<div align="center">
+</td>
+<td width="50%" valign="top">
 
-### FROM MODELS → TO SYSTEMS → TO INFRASTRUCTURE
+### CNN IMAGE CLASSIFIER
+**Convolutional network for image classification**
 
-```text
-┌────────────┐
-│   MODELS   │
-└─────┬──────┘
-      ↓
-┌────────────┐
-│ AI         │
-│ COMPONENTS │
-└─────┬──────┘
-      ↓
-┌────────────┐
-│INTELLIGENT │
-│APPLICATIONS│
-└─────┬──────┘
-      ↓
-┌────────────┐
-│ AGENTS +   │
-│ RETRIEVAL  │
-└─────┬──────┘
-      ↓
-┌────────────┐
-│  SYSTEMS   │
-└─────┬──────┘
-      ↓
-┌────────────────┐
-│ AI INFRASTRUCTURE │
-└───────┬────────┘
-        ↓
-      MEMOPS
-```
+Built with PyTorch/TensorFlow. Training, evaluation, and inference pipeline with interactive Streamlit interface.
 
-</div>
+`Python` `PyTorch` `TensorFlow` `Streamlit`
 
-### ARCHITECTURE PRINCIPLE
+<a href="https://github.com/HarshithGhanashyam/02-cnn-image-classifier">→ repository</a>
 
-<div align="center">
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-```text
-DOMAIN → APPLICATION → INFRASTRUCTURE → INTERFACE → AGENTS
-  │
-  └─────────────── dependencies stay controlled ────────────────┘
-```
+### GAN DIGIT GENERATOR
+**Generative adversarial network for MNIST**
 
-</div>
+Complete adversarial training loop with generator/discriminator architecture. Generates synthetic handwritten digits.
 
-> **Core behavior should not become a hostage to frameworks, databases, models, or external APIs.**
+`Python` `Deep Learning` `MNIST`
 
----
+<a href="https://github.com/HarshithGhanashyam/03-gan-digit-generator">→ repository</a>
 
-# `05` / TECHNOLOGY
+</td>
+<td width="50%" valign="top">
 
-<div align="center">
+### LLM SUMMARIZER & QA
+**LLM-powered document intelligence**
 
-<table width="90%">
-<tr><td><b>LANGUAGES</b></td><td>Python · TypeScript · JavaScript · C · Java</td></tr>
-<tr><td><b>BACKEND</b></td><td>FastAPI · Flask · REST</td></tr>
-<tr><td><b>DATA</b></td><td>PostgreSQL · pgvector · SQLite · MySQL</td></tr>
-<tr><td><b>AI / ML</b></td><td>PyTorch · scikit-learn · NumPy</td></tr>
-<tr><td><b>INTELLIGENT SYSTEMS</b></td><td>RAG · Agents · LLM Integration · Reinforcement Learning</td></tr>
-<tr><td><b>VISION</b></td><td>OpenCV · YOLO · InsightFace</td></tr>
-<tr><td><b>INFRASTRUCTURE</b></td><td>Docker · OpenTelemetry · Poetry · Git · GitHub</td></tr>
+Text summarization and question answering system with document processing pipeline and language model integration.
+
+`Python` `LLMs` `NLP`
+
+<a href="https://github.com/HarshithGhanashyam/04-llm-summarizer-qa">→ repository</a>
+
+</td>
+</tr>
 </table>
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=py,ts,fastapi,flask,postgres,sqlite,docker,pytorch,sklearn,opencv,git,github&theme=dark&perline=6" alt="Technology stack"/>
-
-</div>
-
----
-
-# `06` / ACTIVITY
-
-<div align="center">
-
-<!-- Generated by metrics.yml -->
-<img src="./metrics.svg" width="100%" alt="GitHub metrics dashboard"/>
+<img src="./assets/separator.svg" width="100%"/>
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=HarshithGhanashyam&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=a371f7&text_color=c9d1d9" height="165" alt="GitHub statistics"/>
+## `TECHNOLOGY SYSTEMS`
+
+<table width="100%">
+<tr>
+<td width="33%" align="center" valign="top">
+
+### <img src="./assets/vision-icon.svg" width="20" height="20"/> PERCEPTION
+
+<br/>
+
+![OpenCV](https://img.shields.io/badge/OpenCV-0d1117?style=flat-square&logo=opencv&logoColor=00D4FF)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-0d1117?style=flat-square&logoColor=00D4FF)
+![InsightFace](https://img.shields.io/badge/InsightFace-0d1117?style=flat-square&logoColor=00D4FF)
+![CUDA](https://img.shields.io/badge/CUDA-0d1117?style=flat-square&logo=nvidia&logoColor=00D4FF)
+![Haar Cascades](https://img.shields.io/badge/Haar_Cascades-0d1117?style=flat-square&logoColor=00D4FF)
+![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=flat-square&logo=pytorch&logoColor=00D4FF)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-0d1117?style=flat-square&logo=tensorflow&logoColor=00D4FF)
+
+</td>
+<td width="33%" align="center" valign="top">
+
+### <img src="./assets/intelligence-icon.svg" width="20" height="20"/> INTELLIGENCE
+
+<br/>
+
+![RAG](https://img.shields.io/badge/RAG-0d1117?style=flat-square&logoColor=A855F7)
+![FAISS](https://img.shields.io/badge/FAISS-0d1117?style=flat-square&logoColor=A855F7)
+![LLMs](https://img.shields.io/badge/LLMs-0d1117?style=flat-square&logoColor=A855F7)
+![ReAct Agents](https://img.shields.io/badge/ReAct_Agents-0d1117?style=flat-square&logoColor=A855F7)
+![Reinforcement Learning](https://img.shields.io/badge/Reinforcement_Learning-0d1117?style=flat-square&logoColor=A855F7)
+![GANs](https://img.shields.io/badge/GANs-0d1117?style=flat-square&logoColor=A855F7)
+![CNNs](https://img.shields.io/badge/CNNs-0d1117?style=flat-square&logoColor=A855F7)
+
+</td>
+<td width="33%" align="center" valign="top">
+
+### <img src="./assets/systems-icon.svg" width="20" height="20"/> SYSTEMS
+
+<br/>
+
+![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=F59E0B)
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=F59E0B)
+![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=next.js&logoColor=F59E0B)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=F59E0B)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=F59E0B)
+![Streamlit](https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=F59E0B)
+![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=F59E0B)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+## `SYSTEM TELEMETRY`
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=HarshithGhanashyam&show_icons=true&hide_border=true&bg_color=0d1117&title_color=A855F7&icon_color=00D4FF&text_color=8B949E&ring_color=F59E0B&include_all_commits=true&count_private=true" width="48%" alt="GitHub Stats"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HarshithGhanashyam&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" height="165" alt="Top languages"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HarshithGhanashyam&layout=compact&hide_border=true&bg_color=0d1117&title_color=A855F7&text_color=8B949E&langs_count=8" width="38%" alt="Top Languages"/>
 
 <br/><br/>
 
-<!-- Generated by snake.yml -->
-<img src="https://raw.githubusercontent.com/HarshithGhanashyam/HarshithGhanashyam/output/snake-dark.svg" width="100%" alt="GitHub contribution snake"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=HarshithGhanashyam&hide_border=true&background=0D1117&ring=A855F7&fire=F59E0B&currStreakLabel=00D4FF&sideLabels=8B949E&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=30363d" width="55%" alt="Streak Stats"/>
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=HarshithGhanashyam&bg_color=0d1117&color=8B949E&line=A855F7&point=00D4FF&area=true&area_color=A855F7&hide_border=true" width="90%" alt="Activity Graph"/>
 
 </div>
 
----
+<br/>
 
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:161b22,100:0d1117&height=100&section=footer" width="100%" alt=""/>
-
-### SYSTEM STATUS
-
-`● BUILDING`
-
-**CURRENT FOCUS — MEMOPS**
-
-Operational memory infrastructure for AI systems.
+<img src="./assets/separator.svg" width="100%"/>
 
 <br/>
 
-<a href="mailto:harshithghanashyam@gmail.com">harshithghanashyam@gmail.com</a>
-&nbsp; · &nbsp;
-<a href="https://github.com/HarshithGhanashyam">github.com/HarshithGhanashyam</a>
+## `CURRENT VECTOR`
+
+<div align="center">
+
+```
+ACTIVE RESEARCH DIRECTIONS
+├── 👁️  Advanced multi-camera tracking with identity persistence
+├── 🧠  Multi-agent orchestration with shared memory systems
+├── ⚙️  Production-grade AI pipeline deployment with observability
+└── 🔬  Bridging perception → reasoning → action in unified architectures
+```
+
+</div>
+
+<br/>
+
+<img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+<div align="center">
+
+## LET'S BUILD SOMETHING INTELLIGENT.
+
+<br/>
+
+Whether it's a perception pipeline, a reasoning system, or an end-to-end intelligent application — I'm interested in systems where the engineering is as thoughtful as the AI.
 
 <br/><br/>
 
-`SYSTEMS` · `ARCHITECTURE` · `AI ENGINEERING`
+<a href="mailto:harshithghanashyam@gmail.com"><img src="https://img.shields.io/badge/harshithghanashyam@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161b22" alt="Email"/></a>
+&nbsp;
+<a href="https://github.com/HarshithGhanashyam"><img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=161b22" alt="GitHub"/></a>
+&nbsp;
+<a href="https://www.linkedin.com/in/harshith-ghanashyam-222599349/"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=161b22" alt="LinkedIn"/></a>
+
+<br/><br/>
+
+<sub>
+
+**👁️ SEE · 🧠 THINK · ⚙️ BUILD**
+
+</sub>
 
 </div>

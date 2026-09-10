@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-anchor: middle; dominant-baseline: middle; }
+      .node-box { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 4; }
+      .path-line { stroke: #30363d; stroke-width: 2; }
+      
+      @keyframes pulse {
+        0% { opacity: 0; transform: translateX(0px); }
+        50% { opacity: 1; }
+        100% { opacity: 0; transform: translateX(800px); }
+      }
+      .pulser {
+        fill: url(#grad);
+        animation: pulse 4s ease-in-out infinite;
+      }
+    </style>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" />
+      <stop offset="50%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" class="bg" />
+  
+  <!-- Paths -->
+  <line x1="120" y1="60" x2="180" y2="60" class="path-line" />
+  <line x1="270" y1="60" x2="330" y2="60" class="path-line" />
+  <line x1="420" y1="60" x2="480" y2="60" class="path-line" />
+  <line x1="570" y1="60" x2="630" y2="60" class="path-line" />
+  <line x1="720" y1="60" x2="780" y2="60" class="path-line" />
+
+  <!-- Animated Pulser -->
+  <circle cx="50" cy="60" r="4" class="pulser" />
+
+  <!-- Nodes -->
+  <g transform="translate(60, 45)">
+    <rect x="-45" y="0" width="90" height="30" class="node-box" />
+    <rect x="-45" y="0" width="90" height="2" fill="#00D4FF" rx="1" />
+    <text x="0" y="16" class="text" fill="#E6EDF3">OBSERVE</text>
+  </g>
+  
+  <g transform="translate(225, 45)">
+    <rect x="-55" y="0" width="110" height="30" class="node-box" />
+    <rect x="-55" y="0" width="110" height="2" fill="#3AA6F9" rx="1" />
+    <text x="0" y="16" class="text" fill="#E6EDF3">UNDERSTAND</text>
+  </g>
+  
+  <g transform="translate(375, 45)">
+    <rect x="-45" y="0" width="90" height="30" class="node-box" />
+    <rect x="-45" y="0" width="90" height="2" fill="#7577F6" rx="1" />
+    <text x="0" y="16" class="text" fill="#E6EDF3">REASON</text>
+  </g>
+  
+  <g transform="translate(525, 45)">
+    <rect x="-40" y="0" width="80" height="30" class="node-box" />
+    <rect x="-40" y="0" width="80" height="2" fill="#A855F7" rx="1" />
+    <text x="0" y="16" class="text" fill="#E6EDF3">BUILD</text>
+  </g>
+  
+  <g transform="translate(675, 45)">
+    <rect x="-45" y="0" width="90" height="30" class="node-box" />
+    <rect x="-45" y="0" width="90" height="2" fill="#CF7980" rx="1" />
+    <text x="0" y="16" class="text" fill="#E6EDF3">VERIFY</text>
+  </g>
+  
+  <g transform="translate(825, 45)">
+    <rect x="-45" y="0" width="90" height="30" class="node-box" />
+    <rect x="-45" y="0" width="90" height="2" fill="#F59E0B" rx="1" />
+    <text x="0" y="16" class="text" fill="#E6EDF3">ITERATE</text>
+  </g>
+</svg>

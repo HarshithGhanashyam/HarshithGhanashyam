@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="100%" height="100%">
+  <style>
+    .gear {
+      fill: none;
+      stroke: #F59E0B;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transform-origin: 40px 40px;
+      animation: spin 12s linear infinite;
+    }
+    .gear-inner {
+      fill: none;
+      stroke: #F59E0B;
+      stroke-width: 2;
+      transform-origin: 40px 40px;
+      animation: spin-reverse 8s linear infinite;
+    }
+    .circuit {
+      fill: none;
+      stroke: #F59E0B;
+      stroke-width: 1.5;
+      stroke-dasharray: 30;
+      stroke-dashoffset: 30;
+      animation: draw 4s ease-in-out infinite alternate;
+    }
+    .dot {
+      fill: #F59E0B;
+      animation: pulse-dot 2s infinite alternate;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spin-reverse {
+      100% { transform: rotate(-360deg); }
+    }
+    @keyframes draw {
+      0% { stroke-dashoffset: 30; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulse-dot {
+      0% { opacity: 0.3; }
+      100% { opacity: 1; filter: drop-shadow(0 0 3px #F59E0B); }
+    }
+  </style>
+  
+  <path class="circuit" d="M18,18 L25,25 L32,25" />
+  <circle class="dot" cx="18" cy="18" r="2" />
+  
+  <path class="circuit" style="animation-delay: -1s;" d="M62,18 L55,25 L48,25" />
+  <circle class="dot" cx="62" cy="18" r="2" style="animation-delay: -1s;" />
+  
+  <path class="circuit" style="animation-delay: -2s;" d="M18,62 L25,55 L32,55" />
+  <circle class="dot" cx="18" cy="62" r="2" style="animation-delay: -2s;" />
+  
+  <path class="circuit" style="animation-delay: -3s;" d="M62,62 L55,55 L48,55" />
+  <circle class="dot" cx="62" cy="62" r="2" style="animation-delay: -3s;" />
+
+  <g transform="translate(40,40)">
+    <path class="gear" d="M-15,-4 L-19,-5 L-21,-9 L-18,-12 L-16,-17 L-19,-20 L-16,-23 L-13,-20 L-8,-18 L-5,-21 L-4,-25 L0,-25 L4,-25 L5,-21 L8,-18 L13,-20 L16,-23 L19,-20 L16,-17 L18,-12 L21,-9 L19,-5 L15,-4 L16,0 L15,4 L19,5 L21,9 L18,12 L16,17 L19,20 L16,23 L13,20 L8,18 L5,21 L4,25 L0,25 L-4,25 L-5,21 L-8,18 L-13,20 L-16,23 L-19,20 L-16,17 L-18,12 L-21,9 L-19,5 L-15,4 Z" />
+    <circle class="gear" cx="0" cy="0" r="10" />
+    <circle class="gear-inner" cx="0" cy="0" r="5" stroke-dasharray="4 4" />
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="100%" height="100%">
+  <style>
+    .pulse-ring {
+      fill: none;
+      stroke: #00D4FF;
+      stroke-width: 1;
+      opacity: 0;
+      animation: pulse 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    .pulse-ring:nth-child(2) { animation-delay: 1.33s; }
+    .pulse-ring:nth-child(3) { animation-delay: 2.66s; }
+    
+    .eye-core {
+      fill: #00D4FF;
+      animation: blink 5s infinite;
+    }
+    .eye-outer {
+      fill: none;
+      stroke: #00D4FF;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    @keyframes pulse {
+      0% { r: 12; opacity: 0.8; stroke-width: 2; }
+      100% { r: 35; opacity: 0; stroke-width: 0.5; }
+    }
+    @keyframes blink {
+      0%, 96%, 100% { transform: scaleY(1); }
+      98% { transform: scaleY(0.1); }
+    }
+  </style>
+  <g transform="translate(40,40)">
+    <circle class="pulse-ring" cx="0" cy="0" r="15" />
+    <circle class="pulse-ring" cx="0" cy="0" r="15" />
+    <circle class="pulse-ring" cx="0" cy="0" r="15" />
+    
+    <g class="eye-outer">
+      <path d="M-20,0 C-12,-12 12,-12 20,0 C12,12 -12,12 -20,0 Z" />
+    </g>
+    <g class="eye-core-group">
+      <circle class="eye-core" cx="0" cy="0" r="5" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <style>
+      @keyframes flow { 0% { stroke-dashoffset: 20; } 100% { stroke-dashoffset: 0; } }
+      .bg { fill: #0d1117; }
+      .header { fill: #8B949E; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; }
+      .node { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 6; }
+      .text { fill: #E6EDF3; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; font-weight: 500; text-anchor: middle; dominant-baseline: middle; }
+      .path-line { stroke: #30363d; stroke-width: 2; fill: none; }
+      .particle-line { stroke: #F59E0B; stroke-width: 2; stroke-dasharray: 4, 12; stroke-linecap: round; animation: flow 1s linear infinite; fill: none; }
+      .accent { fill: #F59E0B; }
+    </style>
+  </defs>
+  
+  <rect width="100%" height="100%" class="bg" />
+  <text x="30" y="30" class="header">OPERATIONAL MEMORY INFRASTRUCTURE</text>
+  
+  <g transform="translate(0, 10)">
+    <!-- Paths -->
+    <path d="M 300 45 C 300 65, 450 55, 450 75" class="path-line" />
+    <path d="M 300 45 C 300 65, 450 55, 450 75" class="particle-line" />
+    
+    <path d="M 450 45 L 450 75" class="path-line" />
+    <path d="M 450 45 L 450 75" class="particle-line" />
+    
+    <path d="M 600 45 C 600 65, 450 55, 450 75" class="path-line" />
+    <path d="M 600 45 C 600 65, 450 55, 450 75" class="particle-line" />
+
+    <path d="M 450 105 L 450 125" class="path-line" />
+    <path d="M 450 105 L 450 125" class="particle-line" />
+    
+    <path d="M 450 155 C 450 175, 300 165, 300 185" class="path-line" />
+    <path d="M 450 155 C 450 175, 300 165, 300 185" class="particle-line" />
+    
+    <path d="M 450 155 L 450 185" class="path-line" />
+    <path d="M 450 155 L 450 185" class="particle-line" />
+    
+    <path d="M 450 155 C 450 175, 600 165, 600 185" class="path-line" />
+    <path d="M 450 155 C 450 175, 600 165, 600 185" class="particle-line" />
+    
+    <path d="M 300 215 C 300 235, 450 225, 450 245" class="path-line" />
+    <path d="M 300 215 C 300 235, 450 225, 450 245" class="particle-line" />
+    
+    <path d="M 450 215 L 450 245" class="path-line" />
+    <path d="M 450 215 L 450 245" class="particle-line" />
+    
+    <path d="M 600 215 C 600 235, 450 225, 450 245" class="path-line" />
+    <path d="M 600 215 C 600 235, 450 225, 450 245" class="particle-line" />
+    
+    <!-- Nodes row 1 -->
+    <rect x="240" y="15" width="120" height="30" class="node" />
+    <rect x="240" y="15" width="4" height="30" class="accent" rx="2" />
+    <text x="300" y="31" class="text">INCIDENTS</text>
+    
+    <rect x="390" y="15" width="120" height="30" class="node" />
+    <rect x="390" y="15" width="4" height="30" class="accent" rx="2" />
+    <text x="450" y="31" class="text">FIXES</text>
+    
+    <rect x="540" y="15" width="120" height="30" class="node" />
+    <rect x="540" y="15" width="4" height="30" class="accent" rx="2" />
+    <text x="600" y="31" class="text">DECISIONS</text>
+
+    <!-- Node row 2 -->
+    <rect x="370" y="75" width="160" height="30" class="node" />
+    <rect x="370" y="75" width="4" height="30" class="accent" rx="2" />
+    <text x="450" y="91" class="text">MEMOPS API</text>
+
+    <!-- Node row 3 -->
+    <rect x="370" y="125" width="160" height="30" class="node" />
+    <rect x="370" y="125" width="4" height="30" class="accent" rx="2" />
+    <text x="450" y="141" class="text">MEMORY ENGINE</text>
+
+    <!-- Nodes row 4 -->
+    <rect x="240" y="185" width="120" height="30" class="node" />
+    <rect x="240" y="185" width="4" height="30" class="accent" rx="2" />
+    <text x="300" y="201" class="text">RETRIEVE</text>
+    
+    <rect x="390" y="185" width="120" height="30" class="node" />
+    <rect x="390" y="185" width="4" height="30" class="accent" rx="2" />
+    <text x="450" y="201" class="text">STATE</text>
+    
+    <rect x="540" y="185" width="120" height="30" class="node" />
+    <rect x="540" y="185" width="4" height="30" class="accent" rx="2" />
+    <text x="600" y="201" class="text">DIAGNOSE</text>
+
+    <!-- Node row 5 -->
+    <rect x="350" y="245" width="200" height="30" class="node" />
+    <rect x="350" y="245" width="4" height="30" class="accent" rx="2" />
+    <text x="450" y="261" class="text">PostgreSQL + pgvector</text>
+  </g>
+</svg>

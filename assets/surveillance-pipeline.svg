@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <defs>
+    <style>
+      @keyframes flow { 0% { stroke-dashoffset: 20; } 100% { stroke-dashoffset: 0; } }
+      .bg { fill: #0d1117; }
+      .header { fill: #8B949E; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; }
+      .node-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 6; }
+      .node-text { fill: #E6EDF3; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 500; text-anchor: middle; dominant-baseline: middle; }
+      .icon { fill: #00D4FF; }
+      .path-line { stroke: #30363d; stroke-width: 2; fill: none; }
+      .particle-line { stroke: #00D4FF; stroke-width: 2; stroke-dasharray: 4, 16; stroke-linecap: round; animation: flow 1s linear infinite; fill: none; }
+    </style>
+  </defs>
+  
+  <rect width="100%" height="100%" class="bg" />
+  <text x="30" y="40" class="header">REAL-TIME VISUAL INTELLIGENCE</text>
+  
+  <g transform="translate(30, 85)">
+    <!-- Paths -->
+    <path d="M 140 30 L 190 30" class="path-line" />
+    <path d="M 140 30 L 190 30" class="particle-line" />
+    
+    <path d="M 330 30 L 380 30" class="path-line" />
+    <path d="M 330 30 L 380 30" class="particle-line" />
+    
+    <path d="M 520 30 L 570 30" class="path-line" />
+    <path d="M 520 30 L 570 30" class="particle-line" />
+    
+    <path d="M 710 30 L 760 30" class="path-line" />
+    <path d="M 710 30 L 760 30" class="particle-line" />
+
+    <!-- Nodes -->
+    <g transform="translate(0, 0)">
+      <rect width="140" height="60" class="node-bg" />
+      <rect x="0" y="0" width="4" height="60" fill="#00D4FF" rx="2" />
+      <circle cx="20" cy="30" r="4" class="icon" />
+      <text x="80" y="31" class="node-text">CAMERA</text>
+    </g>
+    
+    <g transform="translate(190, 0)">
+      <rect width="140" height="60" class="node-bg" />
+      <rect x="0" y="0" width="4" height="60" fill="#00D4FF" rx="2" />
+      <rect x="15" y="25" width="10" height="10" class="icon" />
+      <text x="80" y="31" class="node-text">YOLO DETECT</text>
+    </g>
+    
+    <g transform="translate(380, 0)">
+      <rect width="140" height="60" class="node-bg" />
+      <rect x="0" y="0" width="4" height="60" fill="#00D4FF" rx="2" />
+      <path d="M15,30 L20,22 L25,30 Z" class="icon"/>
+      <text x="80" y="31" class="node-text">TRACKING</text>
+    </g>
+    
+    <g transform="translate(570, 0)">
+      <rect width="140" height="60" class="node-bg" />
+      <rect x="0" y="0" width="4" height="60" fill="#00D4FF" rx="2" />
+      <rect x="15" y="22" width="10" height="16" rx="2" class="icon" />
+      <text x="80" y="31" class="node-text">RECOGNITION</text>
+    </g>
+    
+    <g transform="translate(760, 0)">
+      <rect width="120" height="60" class="node-bg" />
+      <rect x="0" y="0" width="4" height="60" fill="#00D4FF" rx="2" />
+      <circle cx="20" cy="30" r="2" class="icon" />
+      <circle cx="25" cy="30" r="2" class="icon" />
+      <circle cx="30" cy="30" r="2" class="icon" />
+      <text x="75" y="31" class="node-text">INCIDENT LOG</text>
+    </g>
+  </g>
+</svg>
