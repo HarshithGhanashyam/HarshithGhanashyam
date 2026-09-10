@@ -4,6 +4,8 @@
 
 <br/>
 
+<a href="https://github.com/HarshithGhanashyam"><img src="https://komarev.com/ghpvc/?username=HarshithGhanashyam&style=for-the-badge&color=0d1117&labelColor=161b22&label=PROFILE+VIEWS" alt="Profile Views"/></a>
+&nbsp;
 <a href="mailto:harshithghanashyam@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161b22" alt="Email"/></a>
 &nbsp;
 <a href="https://github.com/HarshithGhanashyam"><img src="https://img.shields.io/badge/GITHUB-0d1117?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=161b22" alt="GitHub"/></a>
@@ -33,6 +35,10 @@ From real-time computer vision pipelines to autonomous reasoning agents to opera
 <img src="./assets/separator.svg" width="100%"/>
 
 <br/>
+
+<div align="center">
+<img src="./assets/section-featured.svg" width="300" alt="Featured Systems"/>
+</div>
 
 ## `CORE IDENTITY`
 
@@ -122,6 +128,12 @@ FastAPI backends, PostgreSQL with pgvector, multi-tenant REST APIs, Docker deplo
 
 <br/>
 
+<div align="center">
+<img src="./assets/section-featured.svg" width="300" alt="Featured Systems"/>
+</div>
+
+<br/>
+
 ## `FEATURED SYSTEMS`
 
 <br/>
@@ -148,12 +160,22 @@ The system integrates YOLOv8 for configurable object detection, InsightFace for 
 
 `YOLOv8` `InsightFace` `OpenCV` `CUDA` `Python` `FastAPI`
 
-<a href="https://github.com/HarshithGhanashyam/surveillance-project">→ view repository</a>
+<a href="https://github.com/HarshithGhanashyam/surveillance-project"><img src="https://img.shields.io/badge/→_VIEW_REPOSITORY-0d1117?style=for-the-badge&logo=github&logoColor=00D4FF&labelColor=161b22" alt="View Repository"/></a>
 
 </td>
 <td width="45%" valign="top">
 
 <img src="./assets/surveillance-pipeline.svg" width="100%" alt="Visual Intelligence Pipeline"/>
+
+<br/><br/>
+
+<div align="center">
+
+![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/surveillance-project?style=flat-square&color=00D4FF&labelColor=0d1117&label=★)
+![Language](https://img.shields.io/github/languages/top/HarshithGhanashyam/surveillance-project?style=flat-square&color=00D4FF&labelColor=0d1117)
+![Size](https://img.shields.io/github/repo-size/HarshithGhanashyam/surveillance-project?style=flat-square&color=00D4FF&labelColor=0d1117)
+
+</div>
 
 </td>
 </tr>
@@ -172,6 +194,16 @@ The system integrates YOLOv8 for configurable object detection, InsightFace for 
 <td width="45%" valign="top">
 
 <img src="./assets/memops-pipeline.svg" width="100%" alt="MemOps Pipeline"/>
+
+<br/><br/>
+
+<div align="center">
+
+![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/aioops?style=flat-square&color=F59E0B&labelColor=0d1117&label=★)
+![Language](https://img.shields.io/github/languages/top/HarshithGhanashyam/aioops?style=flat-square&color=F59E0B&labelColor=0d1117)
+![Size](https://img.shields.io/github/repo-size/HarshithGhanashyam/aioops?style=flat-square&color=F59E0B&labelColor=0d1117)
+
+</div>
 
 </td>
 <td width="55%" valign="top">
@@ -198,7 +230,7 @@ MemOps is a **multi-tenant REST API + CLI** for storing, versioning, retrieving,
 
 `FastAPI` `PostgreSQL` `pgvector` `SQLAlchemy` `Docker` `Poetry`
 
-<a href="https://github.com/HarshithGhanashyam/aioops">→ view repository</a>
+<a href="https://github.com/HarshithGhanashyam/aioops"><img src="https://img.shields.io/badge/→_VIEW_REPOSITORY-0d1117?style=for-the-badge&logo=github&logoColor=F59E0B&labelColor=161b22" alt="View Repository"/></a>
 
 </td>
 </tr>
@@ -230,12 +262,22 @@ The agent decomposes complex questions into sub-tasks, selects appropriate tools
 
 `Python` `FastAPI` `ReAct Pattern`
 
-<a href="https://github.com/HarshithGhanashyam/05-agentic-research-agent">→ view repository</a>
+<a href="https://github.com/HarshithGhanashyam/05-agentic-research-agent"><img src="https://img.shields.io/badge/→_VIEW_REPOSITORY-0d1117?style=for-the-badge&logo=github&logoColor=A855F7&labelColor=161b22" alt="View Repository"/></a>
 
 </td>
 <td width="45%" valign="top">
 
 <img src="./assets/agent-pipeline.svg" width="100%" alt="ReAct Agent Loop"/>
+
+<br/><br/>
+
+<div align="center">
+
+![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/05-agentic-research-agent?style=flat-square&color=A855F7&labelColor=0d1117&label=★)
+![Language](https://img.shields.io/github/languages/top/HarshithGhanashyam/05-agentic-research-agent?style=flat-square&color=A855F7&labelColor=0d1117)
+![Size](https://img.shields.io/github/repo-size/HarshithGhanashyam/05-agentic-research-agent?style=flat-square&color=A855F7&labelColor=0d1117)
+
+</div>
 
 </td>
 </tr>
@@ -244,6 +286,12 @@ The agent decomposes complex questions into sub-tasks, selects appropriate tools
 <br/>
 
 <img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+<div align="center">
+<img src="./assets/section-projects.svg" width="300" alt="Selected Projects"/>
+</div>
 
 <br/>
 
@@ -253,78 +301,78 @@ The agent decomposes complex questions into sub-tasks, selects appropriate tools
 <tr>
 <td width="50%" valign="top">
 
-### RAG PDF CHATBOT
+### 🔍 RAG PDF CHATBOT
 **Offline RAG pipeline for PDF Q&A**
 
 TF-IDF/SVD embeddings → FAISS vector indexing → sentence-level re-ranking → page-level citations. No API keys. Runs entirely local.
 
 `Python` `FAISS` `Streamlit` `TF-IDF`
 
-<a href="https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot">→ repository</a>
+<a href="https://github.com/HarshithGhanashyam/06-rag-pdf-chatbot">→ repository</a> &nbsp; ![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/06-rag-pdf-chatbot?style=flat-square&color=A855F7&labelColor=0d1117&label=★)
 
 </td>
 <td width="50%" valign="top">
 
-### RL LEARNING AGENT
+### 🎮 RL LEARNING AGENT
 **Tabular Q-learning from scratch**
 
 GridWorld + Tic-Tac-Toe environments. Epsilon-greedy exploration, sparse Q-tables, convergence tracking. No RL library dependency.
 
 `Python` `NumPy` `Streamlit`
 
-<a href="https://github.com/HarshithGhanashyam/08-rl-learning-agent">→ repository</a>
+<a href="https://github.com/HarshithGhanashyam/08-rl-learning-agent">→ repository</a> &nbsp; ![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/08-rl-learning-agent?style=flat-square&color=A855F7&labelColor=0d1117&label=★)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### OPENCV DETECTION SUITE
+### 📷 OPENCV DETECTION SUITE
 **Real-time detection with Haar cascades**
 
 Face, eye, and smile detection + Canny edge detection + HSV color tracking. Supports image, video, and webcam inputs with Streamlit UI.
 
 `Python` `OpenCV` `Streamlit`
 
-<a href="https://github.com/HarshithGhanashyam/07-opencv-detection-suite">→ repository</a>
+<a href="https://github.com/HarshithGhanashyam/07-opencv-detection-suite">→ repository</a> &nbsp; ![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/07-opencv-detection-suite?style=flat-square&color=00D4FF&labelColor=0d1117&label=★)
 
 </td>
 <td width="50%" valign="top">
 
-### CNN IMAGE CLASSIFIER
+### 🧬 CNN IMAGE CLASSIFIER
 **Convolutional network for image classification**
 
 Built with PyTorch/TensorFlow. Training, evaluation, and inference pipeline with interactive Streamlit interface.
 
 `Python` `PyTorch` `TensorFlow` `Streamlit`
 
-<a href="https://github.com/HarshithGhanashyam/02-cnn-image-classifier">→ repository</a>
+<a href="https://github.com/HarshithGhanashyam/02-cnn-image-classifier">→ repository</a> &nbsp; ![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/02-cnn-image-classifier?style=flat-square&color=00D4FF&labelColor=0d1117&label=★)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### GAN DIGIT GENERATOR
+### 🌀 GAN DIGIT GENERATOR
 **Generative adversarial network for MNIST**
 
 Complete adversarial training loop with generator/discriminator architecture. Generates synthetic handwritten digits.
 
 `Python` `Deep Learning` `MNIST`
 
-<a href="https://github.com/HarshithGhanashyam/03-gan-digit-generator">→ repository</a>
+<a href="https://github.com/HarshithGhanashyam/03-gan-digit-generator">→ repository</a> &nbsp; ![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/03-gan-digit-generator?style=flat-square&color=A855F7&labelColor=0d1117&label=★)
 
 </td>
 <td width="50%" valign="top">
 
-### LLM SUMMARIZER & QA
+### 📄 LLM SUMMARIZER & QA
 **LLM-powered document intelligence**
 
 Text summarization and question answering system with document processing pipeline and language model integration.
 
 `Python` `LLMs` `NLP`
 
-<a href="https://github.com/HarshithGhanashyam/04-llm-summarizer-qa">→ repository</a>
+<a href="https://github.com/HarshithGhanashyam/04-llm-summarizer-qa">→ repository</a> &nbsp; ![Stars](https://img.shields.io/github/stars/HarshithGhanashyam/04-llm-summarizer-qa?style=flat-square&color=A855F7&labelColor=0d1117&label=★)
 
 </td>
 </tr>
@@ -333,6 +381,12 @@ Text summarization and question answering system with document processing pipeli
 <br/>
 
 <img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+<div align="center">
+<img src="./assets/section-tech.svg" width="300" alt="Technology Systems"/>
+</div>
 
 <br/>
 
@@ -394,6 +448,12 @@ Text summarization and question answering system with document processing pipeli
 
 <br/>
 
+<div align="center">
+<img src="./assets/section-telemetry.svg" width="300" alt="System Telemetry"/>
+</div>
+
+<br/>
+
 ## `SYSTEM TELEMETRY`
 
 <div align="center">
@@ -408,6 +468,10 @@ Text summarization and question answering system with document processing pipeli
 
 <br/><br/>
 
+<img src="https://github-profile-trophy.vercel.app/?username=HarshithGhanashyam&theme=algolia&no-bg=true&no-frame=true&column=7&margin-w=6" width="80%" alt="GitHub Trophies"/>
+
+<br/><br/>
+
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=HarshithGhanashyam&bg_color=0d1117&color=8B949E&line=A855F7&point=00D4FF&area=true&area_color=A855F7&hide_border=true" width="90%" alt="Activity Graph"/>
 
 </div>
@@ -415,6 +479,30 @@ Text summarization and question answering system with document processing pipeli
 <br/>
 
 <img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+<div align="center">
+
+### 🐍 CONTRIBUTION GRAPH
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HarshithGhanashyam/HarshithGhanashyam/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HarshithGhanashyam/HarshithGhanashyam/output/snake.svg" />
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/HarshithGhanashyam/HarshithGhanashyam/output/snake-dark.svg" width="100%" />
+</picture>
+
+</div>
+
+<br/>
+
+<img src="./assets/separator.svg" width="100%"/>
+
+<br/>
+
+<div align="center">
+<img src="./assets/section-vector.svg" width="300" alt="Current Vector"/>
+</div>
 
 <br/>
 
@@ -456,10 +544,6 @@ Whether it's a perception pipeline, a reasoning system, or an end-to-end intelli
 
 <br/><br/>
 
-<sub>
-
-**👁️ SEE · 🧠 THINK · ⚙️ BUILD**
-
-</sub>
-
 </div>
+
+<img src="./assets/footer.svg" width="100%" alt="👁️ SEE · 🧠 THINK · ⚙️ BUILD"/>

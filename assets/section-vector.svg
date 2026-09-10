@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 40" width="100%" height="40">
+    <style>
+        .text {
+            fill: #E6EDF3;
+            font-size: 14px;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-weight: 600;
+            letter-spacing: 4px;
+        }
+        .dot {
+            fill: #E6EDF3;
+            animation: pulse 2s infinite ease-in-out;
+            transform-origin: 10px 20px;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.3;
+                transform: scale(0.7);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.3);
+            }
+        }
+    </style>
+    <circle cx="10" cy="20" r="3" class="dot" />
+    <text x="25" y="25" class="text">▷ CURRENT VECTOR</text>
+</svg>
